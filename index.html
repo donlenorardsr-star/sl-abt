@@ -270,6 +270,50 @@
         padding: 70px 6%;
       }
     }
+    /* FEEDBACK SECTION STYLE */
+#feedback {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.feedback-box {
+  max-width: 950px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.feedback-box input,
+.feedback-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+.feedback-box button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.feedback-box button:hover {
+  background: #7dd3fc;
+}
+
+.feedback-item {
+  background: #f1f5f9;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
   </style>
 </head>
 <body>
@@ -414,5 +458,22 @@
   <footer>
     <p>&copy; 2026 Sanidu Lenora. All Rights Reserved.</p>
   </footer>
+
+  <section id="feedback">
+  <div class="section-title">
+    <h2>Feedback</h2>
+    <p>Leave your feedback here</p>
+  </div>
+
+  <div class="feedback-box">
+    <input type="text" id="name" placeholder="Your Name">
+
+    <textarea id="message" placeholder="Write your feedback..." rows="4"></textarea>
+
+    <button onclick="addFeedback()">Submit</button>
+
+    <div id="feedbackList"></div>
+  </div>
+</section>
 </body>
 </html>
